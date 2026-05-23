@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree";
+}
+@import url("./_variables.css");
+
+.firstSection{
+    background-image: url("./images/bg-header-mobile.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: auto;
+    padding-top: 50px;
+    color: var(--color);
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.firstSection h1{
+    font-size: 30px;
+    text-align: center;
+    
+    color:  hsl(210, 10%, 33%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.firstSection p{
+    font-size: 18px;
+    text-align: center;
+    color:  hsl(210, 10%, 33%);
+    padding: 10px 0px 30px 0px;
+}
+
+.copyright{
+    width: 30%;
+    margin-bottom:20px;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn1{
+    background-color:  hsl(171, 66%, 44%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn2{
+     
+    background-color:  hsl(233, 100%, 69%);
+    color: white;
+    border: 2px solid  hsl(171, 66%, 44%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: none;
+
+}
+.snippets{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.snippets h1{
+   padding-top: 40px;
+}
+@media (min-width: 700px) {
+.copyright{
+    width: 100px;
+    margin-bottom:20px;
+
+}
+.buttons{
+    flex-direction: row;
+}
+.btn2{
+    margin-bottom: 0px;
+}
+.firstSection p{
+    font-size: 18px;
+    width: 650px;
+    text-align: center;
+    color:  hsl(210, 10%, 33%);
+    padding: 10px 0px 30px 0px;
+}
+    
+}
