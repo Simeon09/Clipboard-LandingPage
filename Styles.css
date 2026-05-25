@@ -106,21 +106,101 @@
   text-align: center;
   justify-content: center;
 }
-.thirdsection{
-    display: grid;
+.thirdsection {
+  display: grid;
   justify-items: center;
-  padding: 90px  40px 40px 40px ;
- color: hsl(210, 10%, 33%);
+  padding: 90px 40px 40px 40px;
+  color: hsl(210, 10%, 33%);
   text-align: center;
 }
-.thirdsection img{
-    width: 100%;
-    padding: 50px 0px;
+.thirdsection img {
+  width: 100%;
+  padding: 50px 0px;
 }
-.thirdsection h1{
-    font-size: 25px;
-    padding-bottom: 20px;;
+.thirdsection h1 {
+  font-size: 25px;
+  padding-bottom: 20px;
 }
+.fourthsection {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: hsl(210, 10%, 33%);
+}
+/* .fourthsection div{
+    width: 90%;
+} */
+.fourthsection img {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.fourthsection h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.fourthsection p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.fifthsection {
+  display: grid;
+  justify-content: center;
+  padding-top: 30px;
+}
+.fifthsection .brand {
+  padding: 30px 0px;
+}
+.brands{
+    padding-top: 30px;
+}
+.sixthsection {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: auto;
+  padding-top: 50px;
+  color: var(--color);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.sixthsection h1 {
+  font-size: 25px;
+  text-align: center;
+
+  color: hsl(210, 10%, 33%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sixthsection p {
+  font-size: 18px;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  padding: 10px 0px 30px 0px;
+}
+footer{
+    margin-top: 40px;
+    background-color: hsl(204, 29%, 93%);
+     color: hsl(210, 10%, 33%);
+}
+.footerLogo{
+    width: 50px;
+    padding: 40px 0px;
+}
+footer ul ol{
+    font-size: 18px;
+    padding: 20px 0px;
+}
+.icon{
+    padding: 30px 0px ;
+}
+.icon2{
+    padding: 0px 30px;
+}
+
 
 @media (min-width: 700px) {
   .copyright {
@@ -153,26 +233,62 @@
     text-align: left;
     justify-content: left;
   }
- 
-  
-  
-  .thirdsection img{
-      width: 60%;
-      padding: 50px 0px;
+
+  .thirdsection img {
+    width: 60%;
+    padding: 50px 0px;
   }
-  .thirdsection h1{
-      font-size: 30px;
-      padding-bottom: 20px;;
+  .thirdsection h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
   }
-  .thirdsection p{
-      width: 500px;
-      display: grid;
-      text-align: center;
-      align-items: center;
-      font-size: 18px;
-      padding-bottom: 20px;;
+  .thirdsection p {
+    width: 500px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding-bottom: 20px;
   }
+  .fourthsection {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .fifthsection {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    gap: 20px;
+  }
+  .brands{
+    display: none;
+  }
+  .sixthsection h1 {
+  font-size: 30px;
+  text-align: center;
+
+  color: hsl(210, 10%, 33%);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
-
-
+.sixthsection p {
+    width: 65%;
+  font-size: 18px;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  padding: 10px 0px 30px 0px;
+}
+footer{
+   padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+}
+@media (min-width: 900px){
+    .brands{
+        display: block;
+    }
+}
